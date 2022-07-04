@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "Alef-Regular";
+  src: url("../fonts/Alef-Regular.ttf");
+}
+@font-face {
+  font-family: "Alef-Bold";
+  src: url("../fonts/Alef-Bold.ttf");
+}
+@font-face {
+  font-family: "Baloo-Bold";
+  src: url("../fonts/Baloo2-Bold.ttf");
+}
+@font-face {
+  font-family: "ChakraPetch-Regular";
+  src: url("../fonts/ChakraPetch-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans-Medium";
+  src: url("../fonts/OpenSans-Medium.ttf");
+}
+body {
+  font-family: "ChakraPetch-Regular";
+}
+
+.site-header {
+  background-color: #1E2234;
+}
+
+@media (min-width: 1400px) {
+  .container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    max-width: 1170px;
+  }
+}
+.navCustom .nav-item .nav-link {
+  text-transform: capitalize;
+  color: #FFffff;
+  padding: 0.8rem 14px;
+  transition: all 0.3s ease-in-out;
+}
+.navCustom .nav-item .nav-link:hover {
+  color: #FF3B4D;
+}
+
+.hero {
+  background: #222539;
+  height: 100vh;
+}
+.hero .hero-left {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .hero-left .inner .social ul {
+  padding: 0;
+  margin: 0;
+}
+.hero .hero-left .inner .social ul li {
+  display: inline;
+  list-style: none;
+}
+.hero .hero-left .inner .social ul li a {
+  height: 38px;
+  width: 38px;
+  border: 2px solid #FF3B4D;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.6rem;
+}
+.hero .hero-left .inner .intro-title {
+  font-size: 50px;
+  font-family: "Baloo-Bold";
+  color: #C5C5C5;
+  text-transform: uppercase;
+}
+
+.btn-theme {
+  text-transform: capitalize;
+  border-radius: 20px;
+  padding: 5px 20px;
+  background-color: #FF3B4D;
+  color: #FFffff;
+  text-align: center;
+  text-decoration: none;
+  margin-right: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  min-width: 130px;
+}
+.btn-theme.outline {
+  border: 2px solid #FF3B4D;
+  background: transparent;
+}
+.btn-theme.outline:hover {
+  background: #FF3B4D;
+  color: #FFffff;
+  transform: translateY(-2px);
+}
+.btn-theme:hover {
+  transform: translateY(-2px);
+  background: #ff5564;
+  color: #FFffff;
+}
+
+.paragraph {
+  color: #C5C5C5;
+}/*# sourceMappingURL=app.css.map */
