@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: "Alef-Regular";
   src: url("../fonts/Alef-Regular.ttf");
@@ -28,8 +32,13 @@
   font-family: "OpenSans-Medium";
   src: url("../fonts/OpenSans-Medium.ttf");
 }
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans-Bold.ttf");
+}
 body {
   font-family: "ChakraPetch-Regular";
+  color: #C5C5C5;
 }
 
 .site-header {
@@ -51,6 +60,7 @@ body {
   color: #FFffff;
   padding: 0.8rem 14px;
   transition: all 0.3s ease-in-out;
+  font-family: "Alef-Regular";
 }
 .navCustom .nav-item .nav-link:hover {
   color: #FF3B4D;
@@ -68,7 +78,6 @@ body {
 }
 .hero .hero-left .inner .social ul {
   padding: 0;
-  margin: 0;
 }
 .hero .hero-left .inner .social ul li {
   display: inline;
@@ -88,10 +97,26 @@ body {
   font-size: 1.6rem;
 }
 .hero .hero-left .inner .intro-title {
-  font-size: 50px;
+  margin: 13px 0;
+  font-size: 2.8rem;
+  line-height: 1;
   font-family: "Baloo-Bold";
   color: #C5C5C5;
   text-transform: uppercase;
+}
+.hero .myPhoto {
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .btn-theme {
@@ -124,4 +149,77 @@ body {
 
 .paragraph {
   color: #C5C5C5;
+  margin-bottom: 0;
+}
+
+.txt-ternary {
+  color: #FF3B4D;
+}
+
+section.default {
+  padding: 50px 0;
+}
+section.default.services, section.default.about {
+  background: #1E2234;
+}
+section.default.services small, section.default.about small {
+  color: #FF3B4D;
+  text-transform: uppercase;
+}
+section.default.services .secTtile, section.default.about .secTtile {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: "OpenSans-Bold";
+}
+section.default.services .items, section.default.about .items {
+  text-align: center;
+  padding: 40px 30px;
+  margin-top: 22px;
+  background-color: #222539;
+  transition: all 0.3s ease-in-out;
+  border-radius: 4px;
+}
+section.default.services .items .iconify, section.default.about .items .iconify {
+  color: #FF3B4D;
+  font-size: 4rem;
+  margin-bottom: 25px;
+}
+section.default.services .items h4, section.default.about .items h4 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  text-transform: capitalize;
+  font-family: "OpenSans-Medium";
+}
+section.default.services .items:hover, section.default.about .items:hover {
+  background: #FF3B4D;
+}
+section.default.services .items:hover .iconify, section.default.about .items:hover .iconify {
+  color: #FFffff;
+}
+section.default.services .items:hover .paragraph, section.default.about .items:hover .paragraph {
+  color: #FFffff;
+}
+section.default.services .items:hover h4, section.default.about .items:hover h4 {
+  color: #FFffff;
+}
+section.default.about {
+  background-color: #222539;
+}
+section.default.about .aboutMePhoto {
+  position: absolute;
+  bottom: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  left: 17%;
+}
+section.default.about .inner {
+  background-color: #1E2234;
+  padding: 35px;
+  border-radius: 4px;
+}
+section.default.about .inner h6 {
+  font-family: "Alef-Regular";
 }/*# sourceMappingURL=app.css.map */
