@@ -68,7 +68,7 @@ body {
 
 .hero {
   background: #222539;
-  height: 100vh;
+  height: 95vh;
 }
 .hero .hero-left {
   height: 100%;
@@ -107,7 +107,8 @@ body {
 .hero .myPhoto {
   position: absolute;
   bottom: 0;
-  left: 5%;
+  left: 9%;
+  width: 78%;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -121,8 +122,6 @@ body {
 
 .btn-theme {
   text-transform: capitalize;
-  border-radius: 20px;
-  padding: 5px 20px;
   background-color: #FF3B4D;
   color: #FFffff;
   text-align: center;
@@ -131,6 +130,13 @@ body {
   display: inline-block;
   transition: all 0.3s ease-in-out;
   min-width: 130px;
+  font-weight: 500;
+  display: inline-block;
+  padding: 12px 40px;
+  border-radius: 100px;
+  font-size: 16px;
+  margin: 0 7px;
+  font-weight: 500;
 }
 .btn-theme.outline {
   border: 2px solid #FF3B4D;
@@ -149,7 +155,6 @@ body {
 
 .paragraph {
   color: #C5C5C5;
-  margin-bottom: 0;
 }
 
 .txt-ternary {
@@ -159,19 +164,19 @@ body {
 section.default {
   padding: 50px 0;
 }
-section.default.services, section.default.about {
+section.default.services, section.default.skill, section.default.about {
   background: #1E2234;
 }
-section.default.services small, section.default.about small {
+section.default.services small, section.default.skill small, section.default.about small {
   color: #FF3B4D;
   text-transform: uppercase;
 }
-section.default.services .secTtile, section.default.about .secTtile {
+section.default.services .secTtile, section.default.skill .secTtile, section.default.about .secTtile {
   font-size: 30px;
   text-transform: capitalize;
   font-family: "OpenSans-Bold";
 }
-section.default.services .items, section.default.about .items {
+section.default.services .items, section.default.skill .items, section.default.about .items {
   text-align: center;
   padding: 40px 30px;
   margin-top: 22px;
@@ -179,27 +184,27 @@ section.default.services .items, section.default.about .items {
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 }
-section.default.services .items .iconify, section.default.about .items .iconify {
+section.default.services .items .iconify, section.default.skill .items .iconify, section.default.about .items .iconify {
   color: #FF3B4D;
   font-size: 4rem;
   margin-bottom: 25px;
 }
-section.default.services .items h4, section.default.about .items h4 {
+section.default.services .items h4, section.default.skill .items h4, section.default.about .items h4 {
   font-size: 20px;
   margin-bottom: 16px;
   text-transform: capitalize;
   font-family: "OpenSans-Medium";
 }
-section.default.services .items:hover, section.default.about .items:hover {
+section.default.services .items:hover, section.default.skill .items:hover, section.default.about .items:hover {
   background: #FF3B4D;
 }
-section.default.services .items:hover .iconify, section.default.about .items:hover .iconify {
+section.default.services .items:hover .iconify, section.default.skill .items:hover .iconify, section.default.about .items:hover .iconify {
   color: #FFffff;
 }
-section.default.services .items:hover .paragraph, section.default.about .items:hover .paragraph {
+section.default.services .items:hover .paragraph, section.default.skill .items:hover .paragraph, section.default.about .items:hover .paragraph {
   color: #FFffff;
 }
-section.default.services .items:hover h4, section.default.about .items:hover h4 {
+section.default.services .items:hover h4, section.default.skill .items:hover h4, section.default.about .items:hover h4 {
   color: #FFffff;
 }
 section.default.about {
@@ -222,4 +227,7 @@ section.default.about .inner {
 }
 section.default.about .inner h6 {
   font-family: "Alef-Regular";
+}
+section.default.skill {
+  background-color: #1E2234;
 }/*# sourceMappingURL=app.css.map */
