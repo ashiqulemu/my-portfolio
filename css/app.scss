@@ -143,11 +143,22 @@
 
              .intro-title {
                  margin: 13px 0;
-                 font-size: 2.8rem;
+                 font-size: 2.6rem;
                  line-height: 1;
                  font-family: 'Baloo-Bold';
                  color: $txt;
                  text-transform: uppercase;
+
+                 .designation {
+                     color: #ffffff;
+                     font-size: 14px;
+                     font-family: "Alef-Bold";
+                     text-transform: capitalize;
+                     background: linear-gradient(90deg, $ternary, transparent);
+                     padding: 10px;
+                     border-radius: 5px;
+
+                 }
              }
          }
      }
@@ -315,9 +326,10 @@
      animation: waveSkillContainer 2s forwards infinite;
      position: relative;
      transform: rotate(45deg);
-     animation: waveChild 3s forwards infinite;
+     animation: waveChild 4s forwards infinite;
+
      .skill-item {
-        padding: 12px;
+         padding: 12px;
          height: 60px;
          width: 60px;
          background-color: #ffffff;
@@ -326,6 +338,7 @@
          display: flex;
          align-items: center;
          justify-content: center;
+         z-index: 1;
 
          .iconify {
              font-size: 2.2rem;
@@ -367,7 +380,7 @@
          transform: rotate(-45deg);
 
          .skill-item {
-            padding: 12px;
+             padding: 12px;
              height: 60px;
              width: 60px;
              background-color: #ffffff;
@@ -376,6 +389,7 @@
              display: flex;
              align-items: center;
              justify-content: center;
+             z-index: 1;
 
              .iconify {
                  font-size: 2.2rem;
@@ -384,21 +398,25 @@
              &.one {
                  position: absolute;
                  top: -28px;
+                 animation: updown 2s linear infinite;
              }
 
              &.two {
                  position: absolute;
                  right: -28px;
+                 animation: updown 2s linear infinite;
              }
 
              &.three {
                  position: absolute;
                  bottom: -28px;
+                 animation: updown 2s linear infinite;
              }
 
              &.four {
                  position: absolute;
                  left: -28px;
+                 animation: updown 2s linear infinite;
              }
          }
 
@@ -416,7 +434,48 @@
              align-items: center;
              animation-delay: 1s;
              position: relative;
-             animation: waveChild 3s forwards infinite;
+             animation: waveChild 4s forwards infinite;
+
+             .skill-item {
+                 padding: 12px;
+                 height: 60px;
+                 width: 60px;
+                 background-color: #ffffff;
+                 border-radius: 50%;
+                 border: 2px solid #ff214f;
+                 display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 z-index: 1;
+
+                 &.nine {
+                     position: absolute;
+                     left: 20px;
+                     top: 0;
+                     animation: updown 5s linear infinite;
+                 }
+
+                 &.ten {
+                     position: absolute;
+                     right: 20px;
+                     top: 0;
+                     animation: updown 4s linear infinite;
+                 }
+
+                 &.eleven {
+                     position: absolute;
+                     left: 20px;
+                     bottom: 0;
+                     animation: updown 2s linear infinite;
+                 }
+
+                 &.twelve {
+                     position: absolute;
+                     right: 20px;
+                     bottom: 0;
+                     animation: updown 3s linear infinite;
+                 }
+             }
 
              img {
                  width: 100%;
@@ -425,6 +484,9 @@
          }
      }
  }
+
+
+ //  animations
 
  @keyframes waveSkillContainer {
      0% {
@@ -464,7 +526,7 @@
      50% {
          box-shadow: 0 0 111px $ternary;
          border-color: #FFf;
-         background-color: $ternary;
+         //  background-color: $ternary;
      }
 
      100% {
@@ -472,24 +534,16 @@
      }
  }
 
- @keyframes rotate {
+ @keyframes updown {
      0% {
-         transform: rotate(0);
+         transform: translateY(0);
      }
 
-
-
-     100% {
-         transform: rotate(360deg);
-     }
- }
-
- @keyframes rotate2 {
-     0% {
-         transform: rotate(0);
+     50% {
+         transform: translateY(5px);
      }
 
      100% {
-         transform: rotate(-360deg);
+         transform: translateY(0);
      }
  }

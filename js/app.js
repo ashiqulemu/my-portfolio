@@ -10,3 +10,22 @@
       this.classList.add('active');
     });
   }
+
+
+  // header menu fixed script 
+
+  function scroller(){
+    
+    let  p= window.pageYOffset;
+     
+    if(p>200){
+      let k = document.getElementById('header');
+      k.classList.add('active') 
+    }else{
+      let k = document.getElementById('header');
+      k.classList.remove('active') 
+    }
+     
+  }
+     
+   
