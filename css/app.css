@@ -233,8 +233,8 @@ section.default.skill {
 }
 
 .skillContainer {
-  height: 40vw;
-  width: 40vw;
+  height: 35vw;
+  width: 35vw;
   margin: 50px auto;
   border: 2px solid #404452;
   border-radius: 50%;
@@ -244,6 +244,39 @@ section.default.skill {
   -webkit-animation: waveSkillContainer 2s forwards infinite;
           animation: waveSkillContainer 2s forwards infinite;
   position: relative;
+  transform: rotate(45deg);
+  -webkit-animation: waveChild 3s forwards infinite;
+          animation: waveChild 3s forwards infinite;
+}
+.skillContainer .skill-item {
+  padding: 12px;
+  height: 60px;
+  width: 60px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  border: 2px solid #ff214f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skillContainer .skill-item .iconify {
+  font-size: 2.2rem;
+}
+.skillContainer .skill-item.five {
+  position: absolute;
+  top: -28px;
+}
+.skillContainer .skill-item.six {
+  position: absolute;
+  right: -28px;
+}
+.skillContainer .skill-item.seven {
+  position: absolute;
+  bottom: -28px;
+}
+.skillContainer .skill-item.eight {
+  position: absolute;
+  left: -28px;
 }
 .skillContainer .parent {
   height: 80%;
@@ -258,16 +291,21 @@ section.default.skill {
   -webkit-animation: waveParent 2s forwards infinite;
           animation: waveParent 2s forwards infinite;
   position: relative;
+  transform: rotate(-45deg);
 }
 .skillContainer .parent .skill-item {
+  padding: 12px;
   height: 60px;
   width: 60px;
-  background-color: #FF3B4D;
+  background-color: #ffffff;
   border-radius: 50%;
-  border: 2px dashed #FFffff;
+  border: 2px solid #ff214f;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.skillContainer .parent .skill-item .iconify {
+  font-size: 2.2rem;
 }
 .skillContainer .parent .skill-item.one {
   position: absolute;
@@ -299,8 +337,8 @@ section.default.skill {
   -webkit-animation-delay: 1s;
           animation-delay: 1s;
   position: relative;
-  -webkit-animation: waveChild 2s forwards infinite;
-          animation: waveChild 2s forwards infinite;
+  -webkit-animation: waveChild 3s forwards infinite;
+          animation: waveChild 3s forwards infinite;
 }
 .skillContainer .parent .child img {
   width: 100%;
@@ -377,5 +415,37 @@ section.default.skill {
   }
   100% {
     box-shadow: 0 0 0;
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate2 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }/*# sourceMappingURL=app.css.map */

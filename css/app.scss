@@ -304,8 +304,8 @@
 
 
  .skillContainer {
-     height: 40vw;
-     width: 40vw;
+     height: 35vw;
+     width: 35vw;
      margin: 50px auto;
      border: 2px solid #404452;
      border-radius: 50%;
@@ -313,8 +313,44 @@
      align-items: center;
      justify-content: center;
      animation: waveSkillContainer 2s forwards infinite;
-
      position: relative;
+     transform: rotate(45deg);
+     animation: waveChild 3s forwards infinite;
+     .skill-item {
+        padding: 12px;
+         height: 60px;
+         width: 60px;
+         background-color: #ffffff;
+         border-radius: 50%;
+         border: 2px solid #ff214f;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+
+         .iconify {
+             font-size: 2.2rem;
+         }
+
+         &.five {
+             position: absolute;
+             top: -28px;
+         }
+
+         &.six {
+             position: absolute;
+             right: -28px;
+         }
+
+         &.seven {
+             position: absolute;
+             bottom: -28px;
+         }
+
+         &.eight {
+             position: absolute;
+             left: -28px;
+         }
+     }
 
      .parent {
          height: 80%;
@@ -325,20 +361,25 @@
          padding: 0;
          display: flex;
          justify-content: center;
-         align-items: center; 
+         align-items: center;
          animation: waveParent 2s forwards infinite;
-
          position: relative;
+         transform: rotate(-45deg);
 
          .skill-item {
+            padding: 12px;
              height: 60px;
              width: 60px;
-             background-color: $ternary;
+             background-color: #ffffff;
              border-radius: 50%;
-             border:2px dashed $white;
+             border: 2px solid #ff214f;
              display: flex;
              align-items: center;
              justify-content: center;
+
+             .iconify {
+                 font-size: 2.2rem;
+             }
 
              &.one {
                  position: absolute;
@@ -361,6 +402,7 @@
              }
          }
 
+
          .child {
              height: 70%;
              width: 70%;
@@ -374,7 +416,7 @@
              align-items: center;
              animation-delay: 1s;
              position: relative;
-             animation: waveChild 2s forwards infinite;
+             animation: waveChild 3s forwards infinite;
 
              img {
                  width: 100%;
@@ -427,5 +469,27 @@
 
      100% {
          box-shadow: 0 0 0;
+     }
+ }
+
+ @keyframes rotate {
+     0% {
+         transform: rotate(0);
+     }
+
+
+
+     100% {
+         transform: rotate(360deg);
+     }
+ }
+
+ @keyframes rotate2 {
+     0% {
+         transform: rotate(0);
+     }
+
+     100% {
+         transform: rotate(-360deg);
      }
  }
