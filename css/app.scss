@@ -169,7 +169,7 @@
  }
 
  .btn-theme {
-     text-transform: capitalize; 
+     text-transform: capitalize;
      background-color: $ternary;
      color: $white;
      text-align: center;
@@ -177,14 +177,15 @@
      margin-right: 10px;
      display: inline-block;
      @include transition(0.3s);
-     min-width: 130px; 
+     min-width: 130px;
      font-weight: 500;
      display: inline-block;
      padding: 12px 40px;
      border-radius: 100px;
-     font-size:16px;
+     font-size: 16px;
      margin: 0 7px;
-font-weight: 500;
+     font-weight: 500;
+
      &.outline {
          border: 2px solid $ternary;
          background: transparent;
@@ -204,7 +205,7 @@ font-weight: 500;
  }
 
  .paragraph {
-     color: $txt; 
+     color: $txt;
  }
 
  .txt-ternary {
@@ -295,5 +296,136 @@ font-weight: 500;
      &.skill {
          @extend .services;
          background-color: $primary;
+     }
+ }
+
+
+ //  skills 
+
+
+ .skillContainer {
+     height: 40vw;
+     width: 40vw;
+     margin: 50px auto;
+     border: 2px solid #404452;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     animation: waveSkillContainer 2s forwards infinite;
+
+     position: relative;
+
+     .parent {
+         height: 80%;
+         width: 80%;
+         margin: 50px auto;
+         border: 3px solid #404452;
+         border-radius: 50%;
+         padding: 0;
+         display: flex;
+         justify-content: center;
+         align-items: center; 
+         animation: waveParent 2s forwards infinite;
+
+         position: relative;
+
+         .skill-item {
+             height: 60px;
+             width: 60px;
+             background-color: $ternary;
+             border-radius: 50%;
+             border:2px dashed $white;
+             display: flex;
+             align-items: center;
+             justify-content: center;
+
+             &.one {
+                 position: absolute;
+                 top: -28px;
+             }
+
+             &.two {
+                 position: absolute;
+                 right: -28px;
+             }
+
+             &.three {
+                 position: absolute;
+                 bottom: -28px;
+             }
+
+             &.four {
+                 position: absolute;
+                 left: -28px;
+             }
+         }
+
+         .child {
+             height: 70%;
+             width: 70%;
+             margin: 50px auto;
+             border: 5px solid #C5C5C5;
+             border-radius: 50%;
+             padding: 0;
+             display: flex;
+             background-color: $ternary;
+             justify-content: center;
+             align-items: center;
+             animation-delay: 1s;
+             position: relative;
+             animation: waveChild 2s forwards infinite;
+
+             img {
+                 width: 100%;
+                 object-fit: cover;
+             }
+         }
+     }
+ }
+
+ @keyframes waveSkillContainer {
+     0% {
+         box-shadow: 0 0 0;
+     }
+
+     50% {
+
+         border-color: #FF3B4D;
+     }
+
+     100% {
+         box-shadow: 0 0 0;
+     }
+ }
+
+ @keyframes waveParent {
+     0% {
+         box-shadow: 0 0 0;
+     }
+
+     50% {
+
+         border-color: #FF3B4D;
+     }
+
+     100% {
+         box-shadow: 0 0 0;
+     }
+ }
+
+ @keyframes waveChild {
+     0% {
+         box-shadow: 0 0 0;
+     }
+
+     50% {
+         box-shadow: 0 0 111px $ternary;
+         border-color: #FFf;
+         background-color: $ternary;
+     }
+
+     100% {
+         box-shadow: 0 0 0;
      }
  }

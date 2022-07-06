@@ -230,4 +230,152 @@ section.default.about .inner h6 {
 }
 section.default.skill {
   background-color: #1E2234;
+}
+
+.skillContainer {
+  height: 40vw;
+  width: 40vw;
+  margin: 50px auto;
+  border: 2px solid #404452;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-animation: waveSkillContainer 2s forwards infinite;
+          animation: waveSkillContainer 2s forwards infinite;
+  position: relative;
+}
+.skillContainer .parent {
+  height: 80%;
+  width: 80%;
+  margin: 50px auto;
+  border: 3px solid #404452;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation: waveParent 2s forwards infinite;
+          animation: waveParent 2s forwards infinite;
+  position: relative;
+}
+.skillContainer .parent .skill-item {
+  height: 60px;
+  width: 60px;
+  background-color: #FF3B4D;
+  border-radius: 50%;
+  border: 2px dashed #FFffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skillContainer .parent .skill-item.one {
+  position: absolute;
+  top: -28px;
+}
+.skillContainer .parent .skill-item.two {
+  position: absolute;
+  right: -28px;
+}
+.skillContainer .parent .skill-item.three {
+  position: absolute;
+  bottom: -28px;
+}
+.skillContainer .parent .skill-item.four {
+  position: absolute;
+  left: -28px;
+}
+.skillContainer .parent .child {
+  height: 70%;
+  width: 70%;
+  margin: 50px auto;
+  border: 5px solid #C5C5C5;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  background-color: #FF3B4D;
+  justify-content: center;
+  align-items: center;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  position: relative;
+  -webkit-animation: waveChild 2s forwards infinite;
+          animation: waveChild 2s forwards infinite;
+}
+.skillContainer .parent .child img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@-webkit-keyframes waveSkillContainer {
+  0% {
+    box-shadow: 0 0 0;
+  }
+  50% {
+    border-color: #FF3B4D;
+  }
+  100% {
+    box-shadow: 0 0 0;
+  }
+}
+
+@keyframes waveSkillContainer {
+  0% {
+    box-shadow: 0 0 0;
+  }
+  50% {
+    border-color: #FF3B4D;
+  }
+  100% {
+    box-shadow: 0 0 0;
+  }
+}
+@-webkit-keyframes waveParent {
+  0% {
+    box-shadow: 0 0 0;
+  }
+  50% {
+    border-color: #FF3B4D;
+  }
+  100% {
+    box-shadow: 0 0 0;
+  }
+}
+@keyframes waveParent {
+  0% {
+    box-shadow: 0 0 0;
+  }
+  50% {
+    border-color: #FF3B4D;
+  }
+  100% {
+    box-shadow: 0 0 0;
+  }
+}
+@-webkit-keyframes waveChild {
+  0% {
+    box-shadow: 0 0 0;
+  }
+  50% {
+    box-shadow: 0 0 111px #FF3B4D;
+    border-color: #FFf;
+    background-color: #FF3B4D;
+  }
+  100% {
+    box-shadow: 0 0 0;
+  }
+}
+@keyframes waveChild {
+  0% {
+    box-shadow: 0 0 0;
+  }
+  50% {
+    box-shadow: 0 0 111px #FF3B4D;
+    border-color: #FFf;
+    background-color: #FF3B4D;
+  }
+  100% {
+    box-shadow: 0 0 0;
+  }
 }/*# sourceMappingURL=app.css.map */
