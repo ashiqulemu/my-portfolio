@@ -60,6 +60,9 @@
  }
 
 
+
+
+
  // mixins
 
  @mixin transition($amount) {
@@ -72,6 +75,19 @@
 
  .site-header {
      background-color: $primary;
+
+     &.active {
+         transition: all 0.4s ease-in;
+         position: fixed;
+         left: 0;
+         right: 0;
+         background: rgb(33 37 56 / 88%);
+         z-index: 2;
+         border-bottom: 2px solid #ff3b4f34;
+         -webkit-backdrop-filter: blur(4px);
+         backdrop-filter: blur(4px);
+         animation: fromTop 0.6s backwards;
+     }
  }
 
  @media (min-width: 1400px) {
@@ -307,6 +323,11 @@
      &.skill {
          @extend .services;
          background-color: $primary;
+     }
+
+     &.portfolio {
+         @extend .services;
+         background-color: $secondary;
      }
  }
 
@@ -545,5 +566,62 @@
 
      100% {
          transform: translateY(0);
+     }
+ }
+
+ @keyframes fromTop {
+     0% {
+         top: -59px;
+     }
+
+
+     100% {
+         top: 0;
+     }
+ }
+
+
+ :target {
+     padding-top: 90px !important;
+     // border: 2px solid rgb(223, 5, 5);
+ }
+
+ #myTab {
+     .nav-item {
+         .nav-link {
+             color: #fff;
+             border: 0;
+             margin-bottom: 0;
+             text-transform: uppercase;
+
+             &.active {
+                 background-color: $ternary;
+                 color: #fff;
+             }
+         }
+     }
+ }
+
+ .card-style {
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 4px 24px 0 #0000006b;
+    background: #1d2233;
+    transition: all 0.4s ease-in-out;
+    &:hover{
+        transform: translateY(-5px);
+    }
+
+     .project-name {
+        padding: 10px 15px;
+        color: #dbdbdb;
+        font-weight: 600;
+        text-align: center; 
+        text-transform: capitalize;
+        font-family: "OpenSans-Bold";
+        a{
+            text-decoration: none;
+            color: $ternary;
+        }
      }
  }

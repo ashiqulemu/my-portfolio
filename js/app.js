@@ -15,8 +15,8 @@
   // header menu fixed script 
 
   function scroller(){
-    
-    let  p= window.pageYOffset;
+
+    let  p = window.pageYOffset;
      
     if(p>200){
       let k = document.getElementById('header');

@@ -22,8 +22,9 @@
     <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" /> -->
 </head>
 
-<body onscroll="scroller()">
+<!-- with right click protection on body -> (oncontextmenu="return false;") -->
 
+<body onscroll="scroller()">
 
     <!-- header  -->
 
@@ -38,7 +39,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <span class="iconify navbar-toggler-icon txt-ternary" data-icon="charm:menu-hamburger"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavDropdown">
                         <ul class="navbar-nav ms-auto navCustom">
@@ -71,7 +72,7 @@
                                 <a class="nav-link" href="#skill">skills</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="">portfolio</a>
+                                <a class="nav-link" href="#portfolio">portfolio</a>
                             </li>
                         </ul>
                     </div>
@@ -333,12 +334,90 @@
         </div>
     </section>
 
+    <section class="default portfolio" id="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <small>portfolio</small>
+                    <h2 class="secTtile">My portfolio</h2>
+                </div>
+            </div>
+            <div class="row">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="web-tab" data-bs-toggle="tab" data-bs-target="#web"
+                            type="button" role="tab" aria-controls="web" aria-selected="true">web </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="graphics-tab" data-bs-toggle="tab" data-bs-target="#graphics"
+                            type="button" role="tab" aria-controls="graphics" aria-selected="false">graphics</button>
+                    </li>
+
+                </ul>
+                <div class="tab-content px-0" id="myTabContent">
+                    <div class="tab-pane fade show active" id="web" role="tabpanel" aria-labelledby="web-tab">
+                        <div class="col-lg-12">
+                            <div class="row my-4" id="imageGallery">
+                                <div class="col-lg-4">
+                                    <div class="card card-style mb-4">
+                                        <img class="mb-0"
+                                            src="http://cdn2.hubspot.net/hubfs/145335/blogging-for-business-heres-everything-you-need-to-know.jpg"
+                                            alt="Sample Image 1">
+                                        <div class="project-name">
+                                            go to &nbsp; <a href="">live view <span class="fs-4 iconify"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card card-style mb-4">
+                                        <img class="mb-0"
+                                            src="http://cdn2.hubspot.net/hubfs/145335/blogging-for-business-heres-everything-you-need-to-know.jpg"
+                                            alt="Sample Image 1">
+                                        <div class="project-name">
+                                            go to &nbsp; <a href="">live view <span class="fs-4 iconify"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card card-style mb-4">
+                                        <img class="mb-0"
+                                            src="http://cdn2.hubspot.net/hubfs/145335/blogging-for-business-heres-everything-you-need-to-know.jpg"
+                                            alt="Sample Image 1">
+                                        <div class="project-name">
+                                            go to &nbsp; <a href="">live view <span class="fs-4 iconify"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="card card-style mb-4">
+                                        <img class="mb-0"
+                                            src="http://cdn2.hubspot.net/hubfs/145335/blogging-for-business-heres-everything-you-need-to-know.jpg"
+                                            alt="Sample Image 1">
+                                        <div class="project-name">
+                                            go to &nbsp; <a href="">live view <span class="fs-4 iconify"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="graphics" role="tabpanel" aria-labelledby="graphics-tab">...</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <script src="js/bootstrap-5.bundle.min.js"></script>
     <script src="js/iconify.min.js"></script>
     <script src="js/app.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script> -->
 
-
+   
 
 </body>
 

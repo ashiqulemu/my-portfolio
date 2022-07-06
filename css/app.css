@@ -44,6 +44,19 @@ body {
 .site-header {
   background-color: #1E2234;
 }
+.site-header.active {
+  transition: all 0.4s ease-in;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: rgba(33, 37, 56, 0.88);
+  z-index: 2;
+  border-bottom: 2px solid rgba(255, 59, 79, 0.2039215686);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  -webkit-animation: fromTop 0.6s backwards;
+          animation: fromTop 0.6s backwards;
+}
 
 @media (min-width: 1400px) {
   .container,
@@ -173,19 +186,19 @@ body {
 section.default {
   padding: 50px 0;
 }
-section.default.services, section.default.skill, section.default.about {
+section.default.services, section.default.portfolio, section.default.skill, section.default.about {
   background: #1E2234;
 }
-section.default.services small, section.default.skill small, section.default.about small {
+section.default.services small, section.default.portfolio small, section.default.skill small, section.default.about small {
   color: #FF3B4D;
   text-transform: uppercase;
 }
-section.default.services .secTtile, section.default.skill .secTtile, section.default.about .secTtile {
+section.default.services .secTtile, section.default.portfolio .secTtile, section.default.skill .secTtile, section.default.about .secTtile {
   font-size: 30px;
   text-transform: capitalize;
   font-family: "OpenSans-Bold";
 }
-section.default.services .items, section.default.skill .items, section.default.about .items {
+section.default.services .items, section.default.portfolio .items, section.default.skill .items, section.default.about .items {
   text-align: center;
   padding: 40px 30px;
   margin-top: 22px;
@@ -193,27 +206,27 @@ section.default.services .items, section.default.skill .items, section.default.a
   transition: all 0.3s ease-in-out;
   border-radius: 4px;
 }
-section.default.services .items .iconify, section.default.skill .items .iconify, section.default.about .items .iconify {
+section.default.services .items .iconify, section.default.portfolio .items .iconify, section.default.skill .items .iconify, section.default.about .items .iconify {
   color: #FF3B4D;
   font-size: 4rem;
   margin-bottom: 25px;
 }
-section.default.services .items h4, section.default.skill .items h4, section.default.about .items h4 {
+section.default.services .items h4, section.default.portfolio .items h4, section.default.skill .items h4, section.default.about .items h4 {
   font-size: 20px;
   margin-bottom: 16px;
   text-transform: capitalize;
   font-family: "OpenSans-Medium";
 }
-section.default.services .items:hover, section.default.skill .items:hover, section.default.about .items:hover {
+section.default.services .items:hover, section.default.portfolio .items:hover, section.default.skill .items:hover, section.default.about .items:hover {
   background: #FF3B4D;
 }
-section.default.services .items:hover .iconify, section.default.skill .items:hover .iconify, section.default.about .items:hover .iconify {
+section.default.services .items:hover .iconify, section.default.portfolio .items:hover .iconify, section.default.skill .items:hover .iconify, section.default.about .items:hover .iconify {
   color: #FFffff;
 }
-section.default.services .items:hover .paragraph, section.default.skill .items:hover .paragraph, section.default.about .items:hover .paragraph {
+section.default.services .items:hover .paragraph, section.default.portfolio .items:hover .paragraph, section.default.skill .items:hover .paragraph, section.default.about .items:hover .paragraph {
   color: #FFffff;
 }
-section.default.services .items:hover h4, section.default.skill .items:hover h4, section.default.about .items:hover h4 {
+section.default.services .items:hover h4, section.default.portfolio .items:hover h4, section.default.skill .items:hover h4, section.default.about .items:hover h4 {
   color: #FFffff;
 }
 section.default.about {
@@ -239,6 +252,9 @@ section.default.about .inner h6 {
 }
 section.default.skill {
   background-color: #1E2234;
+}
+section.default.portfolio {
+  background-color: #222539;
 }
 
 .skillContainer {
@@ -495,4 +511,57 @@ section.default.skill {
   100% {
     transform: translateY(0);
   }
+}
+@-webkit-keyframes fromTop {
+  0% {
+    top: -59px;
+  }
+  100% {
+    top: 0;
+  }
+}
+@keyframes fromTop {
+  0% {
+    top: -59px;
+  }
+  100% {
+    top: 0;
+  }
+}
+:target {
+  padding-top: 90px !important;
+}
+
+#myTab .nav-item .nav-link {
+  color: #fff;
+  border: 0;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+#myTab .nav-item .nav-link.active {
+  background-color: #FF3B4D;
+  color: #fff;
+}
+
+.card-style {
+  overflow: hidden;
+  border-radius: 6px;
+  box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.4196078431);
+  background: #1d2233;
+  transition: all 0.4s ease-in-out;
+}
+.card-style:hover {
+  transform: translateY(-5px);
+}
+.card-style .project-name {
+  padding: 10px 15px;
+  color: #dbdbdb;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "OpenSans-Bold";
+}
+.card-style .project-name a {
+  text-decoration: none;
+  color: #FF3B4D;
 }/*# sourceMappingURL=app.css.map */
