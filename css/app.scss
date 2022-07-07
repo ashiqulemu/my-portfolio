@@ -110,7 +110,25 @@
              padding: 0.8rem 14px;
              @include transition(0.3s);
              font-family: 'Alef-Regular';
-
+            &.active{
+                color: $ternary;
+                position: relative;
+                font-weight: bold;
+                &:after{
+                    content: "";
+                    height: 6px;
+                    width: 6px;
+                    position: absolute;
+                    left: 48%; 
+                    top: 39px;
+                    background: $ternary;
+                    border-radius: 50%;
+                    @media(max-width:768px){
+                        left: 0px;
+                        top: 22px; 
+                    }
+                }
+            }
              &:hover {
                  color: $ternary;
              }
@@ -125,13 +143,25 @@
      background: $secondary;
      height: 95vh;
 
+     @media(max-width: 1023px) {
+         height: auto;
+     }
+
      .hero-left {
          height: 100%;
          display: flex;
          align-items: center;
          justify-content: center;
 
+         @media(max-width: 1023px) {
+             padding: 40px 12px;
+         }
+
          .inner {
+             @media(max-width: 960px) {
+                 text-align: center;
+             }
+
              .social {
                  ul {
                      padding: 0;
@@ -152,6 +182,10 @@
                              justify-content: center;
                              color: #fff;
                              font-size: 1.6rem;
+
+                             &:hover {
+                                 background: $ternary;
+                             }
                          }
                      }
                  }
@@ -165,6 +199,10 @@
                  color: $txt;
                  text-transform: uppercase;
 
+                 @media(max-width: 1023px) {
+                     font-size: 1.8rem;
+                 }
+
                  .designation {
                      color: #ffffff;
                      font-size: 14px;
@@ -173,7 +211,7 @@
                      background: linear-gradient(90deg, $ternary, transparent);
                      padding: 10px;
                      border-radius: 5px;
-
+                     margin: 15px 0px;
                  }
              }
          }
@@ -182,10 +220,16 @@
      .myPhoto {
          position: absolute;
          bottom: 0;
-         left: 9%;
-         width: 78%;
+         left: 8vw;
+         width: 65vh;
          user-select: none;
          pointer-events: none;
+
+         @media(max-width: 1023px) {
+             position: relative;
+             margin: 0 auto;
+             left: unset;
+         }
      }
  }
 
@@ -226,7 +270,6 @@
 
      &:hover {
          transform: translateY(-2px);
-         background: lighten($ternary, 5%);
          color: $white;
      }
  }
@@ -306,13 +349,20 @@
              bottom: 0;
              user-select: none;
              pointer-events: none;
-             left: 17%;
+             left: 11%;
+             transform: translateX(3vw);
+
+             @media(max-width:992px) {
+                 display: none;
+             }
          }
 
          .inner {
              background-color: $primary;
              padding: 35px;
              border-radius: 4px;
+
+
 
              h6 {
                  font-family: 'Alef-Regular';
@@ -349,6 +399,25 @@
      transform: rotate(45deg);
      animation: waveChild 4s forwards infinite;
 
+     @media(max-width:960px) {
+         height: 40vw;
+         width: 40vw;
+     }
+
+     @media(max-width:768px) {
+         height: 60vw;
+         width: 60vw;
+     }
+
+     @media(max-width:600px) {
+        height: 80vw;
+        width: 80vw;
+     }
+     @media(max-width:425px) {
+        height: 90vw;
+        width: 90vw; 
+     }
+
      .skill-item {
          padding: 12px;
          height: 60px;
@@ -360,6 +429,11 @@
          align-items: center;
          justify-content: center;
          z-index: 1;
+
+         @media(max-width:768px) {
+             height: 50px;
+             width: 50px;
+         }
 
          .iconify {
              font-size: 2.2rem;
@@ -411,7 +485,10 @@
              align-items: center;
              justify-content: center;
              z-index: 1;
-
+             @media(max-width:768px) {
+                height: 50px;
+                width: 50px;
+            }
              .iconify {
                  font-size: 2.2rem;
              }
@@ -469,31 +546,36 @@
                  justify-content: center;
                  z-index: 1;
 
+                 @media(max-width:960px) {
+                     height: 50px;
+                     width: 50px;
+                 }
+
                  &.nine {
                      position: absolute;
                      left: 20px;
-                     top: 0;
+                     top: -10px;
                      animation: updown 5s linear infinite;
                  }
 
                  &.ten {
                      position: absolute;
                      right: 20px;
-                     top: 0;
+                     top: -10px;
                      animation: updown 4s linear infinite;
                  }
 
                  &.eleven {
                      position: absolute;
                      left: 20px;
-                     bottom: 0;
+                     bottom: -2px;
                      animation: updown 2s linear infinite;
                  }
 
                  &.twelve {
                      position: absolute;
                      right: 20px;
-                     bottom: 0;
+                     bottom: -2px;
                      animation: updown 3s linear infinite;
                  }
              }
@@ -592,8 +674,7 @@
              color: #fff;
              border: 0;
              margin-bottom: 0;
-             text-transform: uppercase;
-
+             text-transform: uppercase; 
              &.active {
                  background-color: $ternary;
                  color: #fff;
@@ -603,25 +684,27 @@
  }
 
  .card-style {
-    overflow: hidden;
-    border-radius: 6px;
-    box-shadow: 0 4px 24px 0 #0000006b;
-    background: #1d2233;
-    transition: all 0.4s ease-in-out;
-    &:hover{
-        transform: translateY(-5px);
-    }
+     overflow: hidden;
+     border-radius: 6px;
+     box-shadow: 0 4px 24px 0 #0000006b;
+     background: #1d2233;
+     transition: all 0.4s ease-in-out;
+
+     &:hover {
+         transform: translateY(-5px);
+     }
 
      .project-name {
-        padding: 10px 15px;
-        color: #dbdbdb;
-        font-weight: 600;
-        text-align: center; 
-        text-transform: capitalize;
-        font-family: "OpenSans-Bold";
-        a{
-            text-decoration: none;
-            color: $ternary;
-        }
+         padding: 10px 15px;
+         color: #dbdbdb;
+         font-weight: 600;
+         text-align: center;
+         text-transform: capitalize;
+         font-family: "OpenSans-Bold";
+
+         a {
+             text-decoration: none;
+             color: $ternary;
+         }
      }
  }
