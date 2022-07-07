@@ -663,4 +663,19 @@ section.default.portfolio {
 .card-style .project-name a {
   text-decoration: none;
   color: #FF3B4D;
+}
+
+.footer {
+  padding: 10px;
+  background-color: #1E2234;
+}
+
+::-moz-selection {
+  color: #FFffff;
+  background: #FF3B4D;
+}
+
+::selection {
+  color: #FFffff;
+  background: #FF3B4D;
 }/*# sourceMappingURL=app.css.map */
