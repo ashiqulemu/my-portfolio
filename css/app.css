@@ -145,6 +145,9 @@ body {
   color: #fff;
   font-size: 1.6rem;
 }
+.hero .hero-left .inner .social ul li a .iconify {
+  font-size: 1.3rem;
+}
 .hero .hero-left .inner .social ul li a:hover {
   background: #FF3B4D;
 }
@@ -312,6 +315,18 @@ section.default.skill {
 }
 section.default.portfolio {
   background-color: #222539;
+}
+section.default.testimonial-section {
+  padding: 90px 0;
+}
+section.default.testimonial-section small {
+  color: #FF3B4D;
+  text-transform: uppercase;
+}
+section.default.testimonial-section .secTtile {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: "OpenSans-Bold";
 }
 
 .skillContainer {
@@ -665,6 +680,26 @@ section.default.portfolio {
   color: #FF3B4D;
 }
 
+.testimonial-section {
+  background: url("../images/testimonials.jpg");
+  background-size: 100% 100%;
+  padding: 100px 0;
+}
+.testimonial-section .testimonial .blogBox {
+  transition: all 0.4s ease;
+  border-radius: 15px;
+  background: linear-gradient(360deg, #FF3B4D -37%, transparent);
+}
+.testimonial-section .testimonial .blogBox .content {
+  padding: 34px;
+}
+.testimonial-section .testimonial .blogBox .content img {
+  transition: all 0.4s ease;
+}
+.testimonial-section .testimonial .blogBox:hover img {
+  transform: translateY(-5px);
+}
+
 .footer {
   padding: 10px;
   background-color: #1E2234;
@@ -678,4 +713,51 @@ section.default.portfolio {
 ::selection {
   color: #FFffff;
   background: #FF3B4D;
+}
+
+.slick-track {
+  padding: 10px 0;
+}
+
+.blogBox {
+  margin-bottom: 20px;
+}
+
+.slick-next {
+  height: 35px !important;
+  width: 35px !important;
+  background: #1E2234;
+}
+.slick-next:hover {
+  background: #222539;
+}
+
+.slick-prev {
+  height: 35px !important;
+  width: 35px !important;
+  background: #1E2234;
+}
+.slick-prev:hover {
+  background: #222539;
+}
+
+.slick-dots li button {
+  background: lightgrey !important;
+}
+.slick-dots li button:before {
+  opacity: 0 !important;
+}
+
+.slick-dots .slick-active button {
+  background: #FF3B4D !important;
+}
+
+.carousel-indicators {
+  bottom: 15px;
+}
+.carousel-indicators button {
+  height: 10px !important;
+  width: 10px !important;
+  border-radius: 50%;
+  border: 2px solid #fff !important;
 }/*# sourceMappingURL=app.css.map */

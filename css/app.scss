@@ -110,25 +110,29 @@
              padding: 0.8rem 14px;
              @include transition(0.3s);
              font-family: 'Alef-Regular';
-            &.active{
-                color: $ternary;
-                position: relative;
-                font-weight: bold;
-                &:after{
-                    content: "";
-                    height: 6px;
-                    width: 6px;
-                    position: absolute;
-                    left: 48%; 
-                    top: 39px;
-                    background: $ternary;
-                    border-radius: 50%;
-                    @media(max-width:768px){
-                        left: 0px;
-                        top: 22px; 
-                    }
-                }
-            }
+
+             &.active {
+                 color: $ternary;
+                 position: relative;
+                 font-weight: bold;
+
+                 &:after {
+                     content: "";
+                     height: 6px;
+                     width: 6px;
+                     position: absolute;
+                     left: 48%;
+                     top: 39px;
+                     background: $ternary;
+                     border-radius: 50%;
+
+                     @media(max-width:768px) {
+                         left: 0px;
+                         top: 22px;
+                     }
+                 }
+             }
+
              &:hover {
                  color: $ternary;
              }
@@ -182,7 +186,9 @@
                              justify-content: center;
                              color: #fff;
                              font-size: 1.6rem;
-
+                            .iconify{
+                                font-size: 1.3rem;
+                            }
                              &:hover {
                                  background: $ternary;
                              }
@@ -379,6 +385,20 @@
          @extend .services;
          background-color: $secondary;
      }
+
+     &.testimonial-section {
+        padding: 90px 0;
+        small {
+            color: $ternary;
+            text-transform: uppercase;
+        }
+
+        .secTtile {
+            font-size: 30px;
+            text-transform: capitalize;
+            font-family: 'OpenSans-Bold';
+        }
+    }
  }
 
 
@@ -410,12 +430,13 @@
      }
 
      @media(max-width:600px) {
-        height: 80vw;
-        width: 80vw;
+         height: 80vw;
+         width: 80vw;
      }
+
      @media(max-width:425px) {
-        height: 90vw;
-        width: 90vw; 
+         height: 90vw;
+         width: 90vw;
      }
 
      .skill-item {
@@ -485,10 +506,12 @@
              align-items: center;
              justify-content: center;
              z-index: 1;
+
              @media(max-width:768px) {
-                height: 50px;
-                width: 50px;
-            }
+                 height: 50px;
+                 width: 50px;
+             }
+
              .iconify {
                  font-size: 2.2rem;
              }
@@ -674,7 +697,8 @@
              color: #fff;
              border: 0;
              margin-bottom: 0;
-             text-transform: uppercase; 
+             text-transform: uppercase;
+
              &.active {
                  background-color: $ternary;
                  color: #fff;
@@ -689,7 +713,7 @@
      box-shadow: 0 4px 24px 0 #0000006b;
      background: #1d2233;
      transition: all 0.4s ease-in-out;
-
+     
      &:hover {
          transform: translateY(-5px);
      }
@@ -709,12 +733,103 @@
      }
  }
 
- .footer{
-    padding: 10px;
-    background-color:$primary;
+
+
+
+ // testimonial
+
+ .testimonial-section {
+     background: url('../images/testimonials.jpg');
+     background-size: 100% 100%;
+     padding: 100px 0;
+     .testimonial{
+        .blogBox{
+            transition: all 0.4s ease;
+            border-radius: 15px;
+            background: linear-gradient(360deg, $ternary -37%, transparent);
+           .content{
+            padding: 34px;
+            img{
+                transition: all 0.4s ease;
+            }
+           }
+           &:hover{
+            img{
+                transform: translateY(-5px);
+            }
+           }
+        }
+     }
  }
+
+ .footer {
+     padding: 10px;
+     background-color: $primary;
+ }
+
  ::selection {
-    color: $white;
-    background: $ternary;
-  }
-  
+     color: $white;
+     background: $ternary;
+ }
+
+ // slider css
+
+
+ .slick-track {
+     padding: 10px 0;
+ }
+
+ .blogBox {
+     margin-bottom: 20px;
+
+ }
+
+ .slick-next {
+     height: 35px !important;
+     width: 35px !important;
+     background: $primary;
+
+     &:hover {
+         background: $secondary;
+     }
+ }
+
+ .slick-prev {
+     height: 35px !important;
+     width: 35px !important;
+     background: $primary;
+
+     &:hover {
+         background: $secondary;
+     }
+ }
+
+ .slick-dots li button {
+     background: lightgrey !important;
+
+     &:before {
+         opacity: 0 !important;
+     }
+ }
+
+ .slick-dots {
+     .slick-active {
+             button {
+                 background: $ternary !important;;
+
+             }
+         }
+      
+ }
+
+ .carousel-indicators {
+     bottom: 15px;
+
+     button {
+         height: 10px !important;
+         width: 10px !important;
+         border-radius: 50%;
+         border: 2px solid #fff !important;
+
+     }
+ }
