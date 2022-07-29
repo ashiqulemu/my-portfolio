@@ -57,6 +57,15 @@
  body {
      font-family: 'ChakraPetch-Regular';
      color: #C5C5C5;
+     &::-webkit-scrollbar{
+        background-color: $primary;
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb{
+      border-radius: 50px;
+      background:$ternary; 
+    }
  }
 
 
@@ -282,6 +291,7 @@
 
  .paragraph {
      color: $txt;
+     
  }
 
  .txt-ternary {
@@ -297,6 +307,7 @@
          small {
              color: $ternary;
              text-transform: uppercase;
+             font-weight: bold;
          }
 
          .secTtile {
@@ -368,7 +379,9 @@
              padding: 35px;
              border-radius: 4px;
 
-
+             .skill-txt{
+                text-transform: capitalize;
+             }
 
              h6 {
                  font-family: 'Alef-Regular';
