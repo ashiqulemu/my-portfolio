@@ -332,6 +332,7 @@ section.default.testimonial-section {
   padding: 90px 0;
 }
 section.default.testimonial-section small {
+  font-weight: bold;
   color: #FF3B4D;
   text-transform: uppercase;
 }
