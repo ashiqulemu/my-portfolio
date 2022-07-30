@@ -37,6 +37,7 @@ html {
   src: url("../fonts/OpenSans-Bold.ttf");
 }
 body {
+  overflow-x: hidden;
   font-family: "ChakraPetch-Regular";
   color: #C5C5C5;
 }
