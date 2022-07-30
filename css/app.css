@@ -205,6 +205,18 @@ body::-webkit-scrollbar-thumb {
   text-align: justify;
 }
 
+.photoHolder {
+  height: 185px;
+  overflow: hidden;
+}
+.photoHolder img {
+  width: 100%;
+}
+.photoHolder:hover img {
+  transition: all 8s ease-in-out;
+  transform: translateY(calc(-100% + 185px));
+}
+
 .btn-theme {
   text-transform: capitalize;
   background-color: #FF3B4D;
@@ -682,15 +694,18 @@ section.default.testimonial-section .secTtile {
 }
 .card-style .project-name {
   padding: 10px 15px;
-  color: #dbdbdb;
   font-weight: 600;
   text-align: center;
   text-transform: capitalize;
   font-family: "OpenSans-Bold";
+  position: relative;
+  z-index: 2;
+  color: #fff !important;
+  background-color: #FF3B4D;
 }
 .card-style .project-name a {
   text-decoration: none;
-  color: #FF3B4D;
+  color: #fff;
 }
 
 .testimonial-section {

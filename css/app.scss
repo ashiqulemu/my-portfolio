@@ -253,7 +253,20 @@
  .justify {
      text-align: justify;
  }
-
+ .photoHolder{ 
+     height:185px;
+    overflow: hidden;
+    img{
+        width: 100%;
+        
+    }
+    &:hover{
+       img{
+        transition: all 8s ease-in-out;
+        transform: translateY(calc(-100% + 185px));
+       }
+    }
+ }
  .btn-theme {
      text-transform: capitalize;
      background-color: $ternary;
@@ -397,7 +410,10 @@
      &.portfolio {
          @extend .services;
          background-color: $secondary;
+         
      }
+
+    
 
      &.testimonial-section {
         padding: 90px 0;
@@ -733,16 +749,18 @@
      }
 
      .project-name {
-         padding: 10px 15px;
-         color: #dbdbdb;
+         padding: 10px 15px; 
          font-weight: 600;
          text-align: center;
          text-transform: capitalize;
          font-family: "OpenSans-Bold";
-
+        position: relative;
+        z-index: 2;
+        color: #fff!important;
+        background-color: $ternary;
          a {
              text-decoration: none;
-             color: $ternary;
+             color:#fff;
          }
      }
  }
