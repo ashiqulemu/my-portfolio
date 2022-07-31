@@ -59,9 +59,9 @@ body::-webkit-scrollbar-thumb {
   left: 0;
   right: 0;
   background: rgba(33, 37, 56, 0.88);
-  z-index: 2;
+  z-index: 10;
   border-bottom: 2px solid rgba(255, 59, 79, 0.2039215686);
-  -webkit-backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(4px);
   -webkit-animation: fromTop 0.6s backwards;
           animation: fromTop 0.6s backwards;

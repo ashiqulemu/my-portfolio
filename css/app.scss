@@ -92,9 +92,9 @@
          left: 0;
          right: 0;
          background: rgb(33 37 56 / 88%);
-         z-index: 2;
+         z-index: 10;
          border-bottom: 2px solid #ff3b4f34;
-         -webkit-backdrop-filter: blur(4px);
+         -webkit-backdrop-filter: blur(2px);
          backdrop-filter: blur(4px);
          animation: fromTop 0.6s backwards;
      }
