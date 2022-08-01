@@ -218,6 +218,9 @@
                  @media(max-width: 1023px) {
                      font-size: 1.8rem;
                  }
+                 @media(max-width:768px) {
+                     line-height: 2;
+                 }
 
                  .designation {
                      color: #ffffff;

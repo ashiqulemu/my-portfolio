@@ -173,6 +173,11 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.8rem;
   }
 }
+@media (max-width: 768px) {
+  .hero .hero-left .inner .intro-title {
+    line-height: 2;
+  }
+}
 .hero .hero-left .inner .intro-title .designation {
   color: #ffffff;
   font-size: 14px;
