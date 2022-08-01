@@ -175,7 +175,7 @@ body::-webkit-scrollbar-thumb {
 }
 @media (max-width: 768px) {
   .hero .hero-left .inner .intro-title {
-    line-height: 2;
+    margin: 15px 0;
   }
 }
 .hero .hero-left .inner .intro-title .designation {
