@@ -260,6 +260,7 @@ body::-webkit-scrollbar-thumb {
 
 section.default {
   padding: 50px 0;
+  overflow-x: hidden;
 }
 section.default.services, section.default.portfolio, section.default.skill, section.default.about {
   background: #1E2234;
