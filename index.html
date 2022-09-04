@@ -32,7 +32,7 @@
 
 <!-- with right click protection on body -> (oncontextmenu="return false;") -->
 
-<body onscroll="scroller()" class="">
+<body onscroll="scroller()" class="" oncontextmenu="return false;">
 
     <!-- header  -->
 
@@ -781,14 +781,14 @@
         new WOW().init();
 
     </script>
-    <!-- <script>
+    <script>
         document.onkeydown = function (e) {
             if (e.ctrlKey && e.keyCode === 85) {
                 alert("you cant get my code ever :)");
                 return false;
             }
         };
-    </script> -->
+    </script>
 </body>
 
 </html>
