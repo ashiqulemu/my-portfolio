@@ -85,6 +85,7 @@
 
  .site-header {
      background-color: $primary;
+     padding: 10px 0;
 
      &.active {
          transition: all 0.4s ease-in;

@@ -52,6 +52,7 @@ body::-webkit-scrollbar-thumb {
 
 .site-header {
   background-color: #1E2234;
+  padding: 10px 0;
 }
 .site-header.active {
   transition: all 0.4s ease-in;
