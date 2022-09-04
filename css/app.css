@@ -360,6 +360,19 @@ section.default.testimonial-section .secTtile {
   text-transform: capitalize;
   font-family: "OpenSans-Bold";
 }
+section.default.contact-section {
+  padding: 90px 0;
+}
+section.default.contact-section small {
+  font-weight: bold;
+  color: #FF3B4D;
+  text-transform: uppercase;
+}
+section.default.contact-section .secTtile {
+  font-size: 30px;
+  text-transform: capitalize;
+  font-family: "OpenSans-Bold";
+}
 
 .skillContainer {
   height: 35vw;
@@ -735,9 +748,27 @@ section.default.testimonial-section .secTtile {
   transform: translateY(-5px);
 }
 
+.contact-section {
+  background-color: #1E2234;
+}
+.contact-section .form-group {
+  margin: 8px 0;
+}
+.contact-section .form-control {
+  background: transparent;
+  border: 1px solid #747474;
+}
+.contact-section .form-control:focus {
+  border-color: #FF3B4D;
+  box-shadow: 0 0 1px 0.3rem rgba(253, 13, 13, 0.2509803922);
+}
+
 .footer {
   padding: 10px;
-  background-color: #1E2234;
+  background-color: #FF3B4D;
+}
+.footer small {
+  color: #fff;
 }
 
 ::-moz-selection {

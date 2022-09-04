@@ -433,6 +433,21 @@
             font-family: 'OpenSans-Bold';
         }
     }
+
+     &.contact-section {
+        padding: 90px 0;
+        small {
+            font-weight: bold;
+            color: $ternary;
+            text-transform: uppercase;
+        }
+
+        .secTtile {
+            font-size: 30px;
+            text-transform: capitalize;
+            font-family: 'OpenSans-Bold';
+        }
+    }
  }
 
 
@@ -798,9 +813,30 @@
      }
  }
 
+ // contact
+
+ .contact-section{
+    background-color: $primary;
+    .form-group{
+        margin: 8px 0;
+    }
+    .form-control{
+        background: transparent;
+        border: 1px solid #747474;
+        &:focus{
+            border-color: $ternary;
+            box-shadow: 0 0 1px 0.3rem #fd0d0d40;
+        }
+    }
+ }
+
  .footer {
      padding: 10px;
-     background-color: $primary;
+     background-color: $ternary;
+     small{
+        color: #fff;
+     }
+
  }
 
  ::selection {
