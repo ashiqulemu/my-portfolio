@@ -823,9 +823,17 @@
     .form-control{
         background: transparent;
         border: 1px solid #747474;
+        color: rgb(143, 143, 143);
+        &::placeholder{
+            color: rgb(143, 143, 143);
+        }
         &:focus{
+            color: #fff;
             border-color: $ternary;
             box-shadow: 0 0 1px 0.3rem #fd0d0d40;
+            &::placeholder{
+                color: #fff;
+            }
         }
     }
  }

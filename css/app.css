@@ -757,10 +757,30 @@ section.default.contact-section .secTtile {
 .contact-section .form-control {
   background: transparent;
   border: 1px solid #747474;
+  color: rgb(143, 143, 143);
+}
+.contact-section .form-control::-moz-placeholder {
+  color: rgb(143, 143, 143);
+}
+.contact-section .form-control:-ms-input-placeholder {
+  color: rgb(143, 143, 143);
+}
+.contact-section .form-control::placeholder {
+  color: rgb(143, 143, 143);
 }
 .contact-section .form-control:focus {
+  color: #fff;
   border-color: #FF3B4D;
   box-shadow: 0 0 1px 0.3rem rgba(253, 13, 13, 0.2509803922);
+}
+.contact-section .form-control:focus::-moz-placeholder {
+  color: #fff;
+}
+.contact-section .form-control:focus:-ms-input-placeholder {
+  color: #fff;
+}
+.contact-section .form-control:focus::placeholder {
+  color: #fff;
 }
 
 .footer {
