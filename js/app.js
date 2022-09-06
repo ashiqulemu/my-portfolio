@@ -9,6 +9,11 @@
         mycls[j].classList.remove('active');
       }
       this.classList.add('active');
+
+      // in mobile menu it works on collaps the navigation on click a menu item
+       document.getElementById("navbarNavDropdown").classList.remove("show");
+       //----------------------------------------------------------------------
+      
     });
   }
 
