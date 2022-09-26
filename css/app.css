@@ -689,10 +689,6 @@ section.default.contact-section .secTtile {
     top: 0;
   }
 }
-:target {
-  padding-top: 90px !important;
-}
-
 #myTab .nav-item .nav-link {
   color: #fff;
   border: 0;
@@ -876,4 +872,8 @@ section.default.contact-section .secTtile {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+:target {
+  padding-top: 90px !important;
 }/*# sourceMappingURL=app.css.map */

@@ -747,10 +747,7 @@
  }
 
 
- :target {
-     padding-top: 90px !important;
-     // border: 2px solid rgb(223, 5, 5);
- }
+
 
  #myTab {
      .nav-item {
@@ -968,4 +965,8 @@
         align-items: center;
         justify-content: center;
     }
+ }
+
+ :target {
+    padding-top:90px !important; 
  }
