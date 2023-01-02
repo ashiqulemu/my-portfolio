@@ -783,10 +783,10 @@ section.default.contact-section .secTtile {
 
 .footer {
   padding: 10px;
-  background-color: #FF3B4D;
+  background-color: #2F2C3D;
 }
 .footer small {
-  color: #fff;
+  color: rgb(199, 199, 199);
 }
 
 ::-moz-selection {
