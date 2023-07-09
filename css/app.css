@@ -64,17 +64,16 @@ body::-webkit-scrollbar-thumb {
   border-bottom: 2px solid rgba(255, 59, 79, 0.2039215686);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(4px);
-  -webkit-animation: fromTop 0.6s backwards;
-          animation: fromTop 0.6s backwards;
+  animation: fromTop 0.6s backwards;
 }
 
 @media (min-width: 1400px) {
   .container,
-.container-lg,
-.container-md,
-.container-sm,
-.container-xl,
-.container-xxl {
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
     max-width: 1170px;
   }
 }
@@ -197,7 +196,6 @@ body::-webkit-scrollbar-thumb {
   width: 65vh;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
 }
@@ -321,7 +319,6 @@ section.default.about .aboutMePhoto {
   bottom: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   pointer-events: none;
   left: 11%;
@@ -385,12 +382,10 @@ section.default.contact-section .secTtile {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-animation: waveSkillContainer 2s forwards infinite;
-          animation: waveSkillContainer 2s forwards infinite;
+  animation: waveSkillContainer 2s forwards infinite;
   position: relative;
   transform: rotate(45deg);
-  -webkit-animation: waveChild 4s forwards infinite;
-          animation: waveChild 4s forwards infinite;
+  animation: waveChild 4s forwards infinite;
 }
 @media (max-width: 960px) {
   .skillContainer {
@@ -463,8 +458,7 @@ section.default.contact-section .secTtile {
   display: flex;
   justify-content: center;
   align-items: center;
-  -webkit-animation: waveParent 2s forwards infinite;
-          animation: waveParent 2s forwards infinite;
+  animation: waveParent 2s forwards infinite;
   position: relative;
   transform: rotate(-45deg);
 }
@@ -492,26 +486,22 @@ section.default.contact-section .secTtile {
 .skillContainer .parent .skill-item.one {
   position: absolute;
   top: -28px;
-  -webkit-animation: updown 2s linear infinite;
-          animation: updown 2s linear infinite;
+  animation: updown 2s linear infinite;
 }
 .skillContainer .parent .skill-item.two {
   position: absolute;
   right: -28px;
-  -webkit-animation: updown 2s linear infinite;
-          animation: updown 2s linear infinite;
+  animation: updown 2s linear infinite;
 }
 .skillContainer .parent .skill-item.three {
   position: absolute;
   bottom: -28px;
-  -webkit-animation: updown 2s linear infinite;
-          animation: updown 2s linear infinite;
+  animation: updown 2s linear infinite;
 }
 .skillContainer .parent .skill-item.four {
   position: absolute;
   left: -28px;
-  -webkit-animation: updown 2s linear infinite;
-          animation: updown 2s linear infinite;
+  animation: updown 2s linear infinite;
 }
 .skillContainer .parent .child {
   height: 70%;
@@ -524,11 +514,9 @@ section.default.contact-section .secTtile {
   background-color: #FF3B4D;
   justify-content: center;
   align-items: center;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  animation-delay: 1s;
   position: relative;
-  -webkit-animation: waveChild 4s forwards infinite;
-          animation: waveChild 4s forwards infinite;
+  animation: waveChild 4s forwards infinite;
 }
 .skillContainer .parent .child .skill-item {
   padding: 12px;
@@ -552,29 +540,25 @@ section.default.contact-section .secTtile {
   position: absolute;
   left: 20px;
   top: -10px;
-  -webkit-animation: updown 5s linear infinite;
-          animation: updown 5s linear infinite;
+  animation: updown 5s linear infinite;
 }
 .skillContainer .parent .child .skill-item.ten {
   position: absolute;
   right: 20px;
   top: -10px;
-  -webkit-animation: updown 4s linear infinite;
-          animation: updown 4s linear infinite;
+  animation: updown 4s linear infinite;
 }
 .skillContainer .parent .child .skill-item.eleven {
   position: absolute;
   left: 20px;
   bottom: -2px;
-  -webkit-animation: updown 2s linear infinite;
-          animation: updown 2s linear infinite;
+  animation: updown 2s linear infinite;
 }
 .skillContainer .parent .child .skill-item.twelve {
   position: absolute;
   right: 20px;
   bottom: -2px;
-  -webkit-animation: updown 3s linear infinite;
-          animation: updown 3s linear infinite;
+  animation: updown 3s linear infinite;
 }
 .skillContainer .parent .child img {
   width: 100%;
@@ -582,30 +566,7 @@ section.default.contact-section .secTtile {
      object-fit: cover;
 }
 
-@-webkit-keyframes waveSkillContainer {
-  0% {
-    box-shadow: 0 0 0;
-  }
-  50% {
-    border-color: #FF3B4D;
-  }
-  100% {
-    box-shadow: 0 0 0;
-  }
-}
-
 @keyframes waveSkillContainer {
-  0% {
-    box-shadow: 0 0 0;
-  }
-  50% {
-    border-color: #FF3B4D;
-  }
-  100% {
-    box-shadow: 0 0 0;
-  }
-}
-@-webkit-keyframes waveParent {
   0% {
     box-shadow: 0 0 0;
   }
@@ -627,18 +588,6 @@ section.default.contact-section .secTtile {
     box-shadow: 0 0 0;
   }
 }
-@-webkit-keyframes waveChild {
-  0% {
-    box-shadow: 0 0 0;
-  }
-  50% {
-    box-shadow: 0 0 111px #FF3B4D;
-    border-color: #FFf;
-  }
-  100% {
-    box-shadow: 0 0 0;
-  }
-}
 @keyframes waveChild {
   0% {
     box-shadow: 0 0 0;
@@ -651,17 +600,6 @@ section.default.contact-section .secTtile {
     box-shadow: 0 0 0;
   }
 }
-@-webkit-keyframes updown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 @keyframes updown {
   0% {
     transform: translateY(0);
@@ -671,14 +609,6 @@ section.default.contact-section .secTtile {
   }
   100% {
     transform: translateY(0);
-  }
-}
-@-webkit-keyframes fromTop {
-  0% {
-    top: -59px;
-  }
-  100% {
-    top: 0;
   }
 }
 @keyframes fromTop {
@@ -760,9 +690,6 @@ section.default.contact-section .secTtile {
 .contact-section .form-control::-moz-placeholder {
   color: rgb(143, 143, 143);
 }
-.contact-section .form-control:-ms-input-placeholder {
-  color: rgb(143, 143, 143);
-}
 .contact-section .form-control::placeholder {
   color: rgb(143, 143, 143);
 }
@@ -772,9 +699,6 @@ section.default.contact-section .secTtile {
   box-shadow: 0 0 1px 0.3rem rgba(253, 13, 13, 0.2509803922);
 }
 .contact-section .form-control:focus::-moz-placeholder {
-  color: #fff;
-}
-.contact-section .form-control:focus:-ms-input-placeholder {
   color: #fff;
 }
 .contact-section .form-control:focus::placeholder {
