@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- seo activities -->
+
+    <meta charset="utf-8">
+    <meta name="google-site-verification" content="b3JBEB_Tp6NzGBZBo-wCS3L3RNdS1WNSiqZdCdt0gDw" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta property='og:title' content="Ashiqul Islam Emu Portfolio" />
+    <meta property='og:image' content='./images/ashiqulemu-vue-emu-js.jpg' />
+    <meta property='og:description' content='Ashiqul Islam Emu, frontend developer Jashore' />
+    <meta property='og:url' content='ashiqulemu.netlify.app' />
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='627' />
+    <meta property="og:type" content='website' />
+    <title>Ashiqul Islam Emu</title>
+
+
+    <link rel="icon" href="./images/favi.png">
+    <link rel="stylesheet" href="css/bootstrap-5.1.3min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!-- testimonial slick css -->
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick-theme.css" />
+    <!-- animation -->
+    <script type="text/javascript" src="./js/wow.min.js"></script>
+    <link rel="stylesheet" href="./css/animate.min.css" />
+    <link rel="stylesheet" href="./css/magnific-popup.css" />
+</head>
+
+<!-- with right click protection on body -> (oncontextmenu="return false;") -->
+
+<body onscroll="scroller()">
+
+    <!-- header  -->
+
+    <section class="site-header" id="header">
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg py-0 "> 
+                    <a class="navbar-brand" href="/">
+                        <img src="./images/logo.svg" width="100px">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="iconify navbar-toggler-icon txt-ternary" data-icon="charm:menu-hamburger"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ms-auto navCustom">
+                            <!-- "me-auto" for left align | "ms-auto" for right align | "mx-auto" for center align--->
+
+                            <!-- <li class="nav-item dropdown">
+
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdownItem" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                About
+                            </a>
+                            <ul class="dropdown-menu border-0 shadow-lg" aria-labelledby="dropdownItem">
+                                <li><a class="dropdown-item" href="#">Introduction</a></li> 
+                            </ul>
+                        </li> -->
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#services">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">about</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#skill">skills</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#portfolio">portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#testimonial">testimonial</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="hero" id="home">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div class="col-lg-6">
+                    <div class="hero-left">
+                        <div class="inner">
+                            <div class="social">
+                                <ul class="mb-2">
+                                    <li>
+                                        <a href=" https://rb.gy/ybduew" target="_blank">
+                                            <span class="iconify" data-icon="akar-icons:github-fill"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://rb.gy/du7bpt" target="_blank">
+                                            <span class="iconify" data-icon="dashicons:facebook-alt"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://rb.gy/ck0z09" target="_blank">
+                                            <span class="iconify" data-icon="bxl:instagram-alt"></span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://rb.gy/yj23nw" target="_blank">
+                                            <span class="iconify" data-icon="dashicons:whatsapp"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="intro-title">
+                                Hi! i'm ashiqul islam emu
+                                <div class="designation">Frontend Developer | UI/UX Designer | Graphic Designer</div>
+                            </div>
+
+                            <p class="paragraph mb-4 mt-3">
+                                I am professional Senior Front End Developer as a PSD, XD, Figma to HTML specialist
+                                since 2013, In my professional career i have done more then 350+ projects with different
+                                technologies.
+                            </p>
+                            <a href="#portfolio" data-wow-delay="1s" class="btn-theme outline wow fadeInUp animated">my
+                                portfolio</a>
+                            <a href="https://rb.gy/szu2ym" target="_blank" data-wow-delay="2s"
+                                class="btn-theme wow fadeInUp animated">Hire Me!</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 position-relative text-center py-5 wow fadeIn">
+                    <img src="./images/me.png" class="myPhoto  img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="default services" id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <small>services</small>
+                    <h2 class="secTtile">my services</h2>
+                    <p class=" px-3 paragraph mx-auto ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Similique
+                        voluptatem
+                    </p>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="items wow fadeInUp">
+                        <span class="iconify" data-icon="ant-design:code-sandbox-circle-filled"></span>
+                        <h4>Web Development</h4>
+                        <p class="paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="items wow fadeInUp">
+                        <span class="iconify" data-icon="el:website-alt"></span>
+                        <h4> Web Design</h4>
+                        <p class="paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="items wow fadeInUp">
+                        <span class="iconify" data-icon="ant-design:sketch-circle-filled"></span>
+                        <h4>Graphic design</h4>
+                        <p class="paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="items wow fadeInUp">
+                        <span class="iconify" data-icon="el:video-alt"></span>
+                        <h4>video editing</h4>
+                        <p class="paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="items wow fadeInUp">
+                        <span class="iconify" data-icon="ic:sharp-camera"></span>
+                        <h4>photography</h4>
+                        <p class="paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="items wow fadeInUp">
+                        <span class="iconify" data-icon="ant-design:code-sandbox-circle-filled"></span>
+                        <h4>SEO</h4>
+                        <p class="paragraph">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
+                            laboriosam
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="default about position-relative" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <small>about</small>
+                    <h2 class="secTtile">about me</h2>
+                </div>
+            </div>
+            <div class="row mt-5 ">
+                <div class='col-lg-6'>
+                    <img src="./images/me2.png" class="aboutMePhoto wow fadeInLeftBig">
+                </div>
+                <div class="col-lg-6">
+                    <div class="inner">
+                        <h5>Hi There!</h5>
+                        <p class="paragraph mb-4">
+                            Im Ashiqul Islam Emu, I have done 350+ project on marketplace (Fiver & Upwork). I was an
+                            employer of a software firm at sheikh hasina software technology park Jashore(MicroDreamIT).
+                            I worked here 7+ years.
+                        </p>
+                        <p class="paragraph mb-4">
+                            My main responsibility was make professional website with custom UI based on client
+                            requirements. I have desiged lots of business websites with various technologies. I'm
+                            experts on, <br>
+                            <small class="skill-txt txt-ternary">
+                                Bootstrap, Vue JS, scss/css, React JS, NuxtJS, jquery. Javascript, NPM,
+                                MaterilizeCSS & Tailwind CSS.
+                            </small>
+                        </p>
+                        <p class="paragraph mb-4">
+                            My Graphical Skills: <br>
+                            <small class=" skill-txt txt-ternary">
+                                Adobi Photoshop, Illustrator, XD, Figma, Premere Pro, lightroom
+                            </small>
+                        </p>
+                        <div class="row">
+                            <div class="col-lg-6  col-md-6 col-sm-12 mb-3">
+                                <h6 class="mb-1 txt-ternary">Full Name</h6>
+                                <span class="fs-6">Ashiqul Islam Emu</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12  mb-3">
+                                <h6 class="mb-1 txt-ternary">Email</h6>
+                                <span class="fs-6">ashiqulemu.jpi@gmail.com</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12  mb-3">
+                                <h6 class="mb-1 txt-ternary">Phone</h6>
+                                <span class="fs-6">+880 1723 09 64 37</span>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-12  mb-3">
+                                <h6 class="mb-1 txt-ternary">Address</h6>
+                                <span class="fs-6">Jashore, Khulna Bangladesh</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="default skill position-relative" id="skill">
+        <div class="container overflow-hidden">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <small>skills</small>
+                    <h2 class="secTtile">I'M EXPERT ON</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="skillContainer">
+                        <div class="skill-item five">
+                            <span class="iconify" data-icon="logos:jquery"></span>
+                        </div>
+                        <div class="skill-item six">
+                            <span class="iconify" data-icon="logos:bootstrap"></span>
+                        </div>
+                        <div class="skill-item seven">
+                            <span class="iconify" data-icon="logos:tailwindcss-icon"></span>
+                        </div>
+                        <div class="skill-item eight">
+                            <span class="iconify" data-icon="logos:npm-icon"></span>
+                        </div>
+                        <div class="parent">
+                            <div class="skill-item one">
+                                <span class="iconify" data-icon="logos:html-5"></span>
+                            </div>
+                            <div class="skill-item two">
+                                <span class="iconify" data-icon="vscode-icons:file-type-sass"></span>
+                            </div>
+                            <div class="skill-item three">
+                                <span class="iconify" data-icon="vscode-icons:file-type-light-js"></span>
+                            </div>
+                            <div class="skill-item four">
+                                <span class="iconify" data-icon="logos:vue"></span>
+                            </div>
+                            <div class="child">
+                                <div class="skill-item nine">
+                                    <span class="iconify" data-icon="vscode-icons:file-type-photoshop"></span>
+                                </div>
+                                <div class="skill-item ten">
+                                    <span class="iconify" data-icon="vscode-icons:file-type-ai"></span>
+                                </div>
+                                <div class="skill-item eleven">
+                                    <span class="iconify" data-icon="simple-icons:adobexd"></span>
+                                </div>
+                                <div class="skill-item twelve">
+                                    <span class="iconify" data-icon="logos:figma"></span>
+                                </div>
+                                <img src="./images/emu.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12 text-center">
+                    <h2 class="fw-bold">Let's Work Together</h2>
+                    <p class="paragraph py-2 w-75 text-center mx-auto">
+                        Hey! I can will be your Frontend developer, i can make modern website for your business. If you
+                        think you need a partner to work on a project you can also hire me from the link below!
+                    </p>
+                    <a href="https://rb.gy/szu2ym" class="wow zoomIn animated btn-theme outline">hire me now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="default portfolio" id="portfolio">
+        <div class="container">
+            <div class="row  px-2">
+                <div class="col-lg-12 text-center">
+                    <small>portfolio</small>
+                    <h2 class="secTtile">My portfolio</h2>
+                </div>
+            </div>
+            <div class="row px-2">
+                <ul class="nav nav-tabs" style="border-bottom: 1px solid #444344;" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="web-tab" data-bs-toggle="tab" data-bs-target="#web"
+                            type="button" role="tab" aria-controls="web" aria-selected="true">web </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="graphics-tab" data-bs-toggle="tab" data-bs-target="#graphics"
+                            type="button" role="tab" aria-controls="graphics" aria-selected="false">graphics</button>
+                    </li>
+                </ul>
+                <div class="tab-content px-0" id="myTabContent">
+                    <div class="tab-pane fade show active" id="web" role="tabpanel" aria-labelledby="web-tab">
+                        <div class="col-lg-12">
+                            <div class="row my-4">
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder"> <img class="mb-0" src="./images/websites/aidmeuk.png"
+                                                alt="Nothing found image"></div>
+
+                                        <div class="project-name ">
+                                    Aidmeuk Donation &nbsp; <a href="https://aidmeuk.netlify.app/" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder"> <img class="mb-0" src="./images/websites/marin.png"
+                                                alt="Nothing found image"></div>
+
+                                        <div class="project-name ">
+                                            EZZHA Soft &nbsp; <a href="https://ezzha.netlify.app/" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder"> 
+                                            <img class="mb-0" src="./images/websites/netlify-app-2023-01-02-21_26_45.png"
+                                                alt="Nothing found image">
+                                            </div>
+                                        <div class="project-name ">
+                                            Tevini &nbsp; <a href="https://tevini.netlify.app/" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder"> 
+                                            <img class="mb-0" src="./images/websites/duco.png"
+                                                alt="Nothing found image">
+                                            </div>
+                                        <div class="project-name ">
+                                            Duco &nbsp; <a href="https://duco-web.netlify.app" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder">
+                                            <img class="mb-0" src="./images/websites/g-wish.png"
+                                                alt="Nothing found image">
+                                        </div>
+
+                                        <div class="project-name ">
+                                            G-Wish <a href="https://g-wish.netlify.app/" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder">
+                                            <img class="mb-0" src="./images/websites/asset-panda-emu.png"
+                                                alt="Nothing found image">
+                                        </div>
+
+                                        <div class="project-name ">
+                                            Asset Panda Admin panel &nbsp; <a href="https://asset-panda.netlify.app/"
+                                                target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder">
+                                            <img class="mb-0" src="./images/websites/property.png"
+                                                alt="Nothing found image">
+                                        </div>
+                                        <div class="project-name ">
+                                            property Management &nbsp; <a href="https://demo-property.netlify.app/"
+                                                target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder">
+                                            <img class="mb-0" src="./images/websites/behandler.png"
+                                                alt="Nothing found image">
+                                        </div>
+
+                                        <div class="project-name ">
+                                            Be-Handler&nbsp; <a href="https://be-handler.vercel.app/" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder">
+                                            <img class="mb-0" src="./images/websites/fbrs.png"
+                                                alt="Nothing found image">
+                                        </div>
+
+                                        <div class="project-name ">
+                                            BFRS &nbsp; <a href="https://bfrs.netlify.app/" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder">
+                                            <img class="mb-0" src="./images/websites/japan-web-emu.png"
+                                                alt="Nothing found image">
+                                        </div>
+                                        <div class="project-name ">
+                                            Japan Web &nbsp; <a href="https://japan-web.netlify.app/" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder">
+                                            <img class="mb-0" src="./images/websites/falcon.png"
+                                                alt="Nothing found image">
+                                        </div>
+                                        <div class="project-name ">
+                                            Falcon &nbsp; <a href="https://cmh123.netlify.app/" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder">
+                                            <img class="mb-0" src="./images/websites/fund.png"
+                                                alt="Nothing found image">
+                                        </div>
+                                        <div class="project-name ">
+                                            Fund &nbsp; <a href="https://fund-uk.netlify.app/" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder">
+                                            <img class="mb-0" src="./images/websites/aponhealth.png"
+                                                alt="Nothing found image">
+                                        </div>
+                                        <div class="project-name ">
+                                            Apon Health &nbsp; <a href="https://apon-health-dashbaord.netlify.app/"
+                                                target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder">
+                                            <img class="mb-0" src="./images/websites/wasabi.png"
+                                                alt="Nothing found image">
+                                        </div>
+                                        <div class="project-name ">
+                                            Wasabi UK &nbsp; <a href="https://wasabi-uk.netlify.app/" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 col-sm-12">
+                                    <div class="card card-style mb-4 wow fadeIn">
+                                        <div class="photoHolder">
+                                            <img class="mb-0" src="./images/websites/dutypedia.png"
+                                                alt="Nothing found image">
+                                        </div>
+                                        <div class="project-name ">
+                                            Dutypedia &nbsp; <a href="https://dutypedia.netlify.app/" target="_blank">
+                                                <span class="fs-4 iconify" data-bs-toggle="tooltip"
+                                                    data-bs-placement="top" title="View Live Site"
+                                                    data-icon="emojione:eye"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="graphics" role="tabpanel" aria-labelledby="graphics-tab">
+                        <h5 class="txt-ternary fw-bold my-5 text-center">LOGOS</h5>
+                        <div class="row popup-gallery ">
+                            <div class="col-lg-2 col-md-2 col-sm-6 ">
+                                <div class="card card-style mb-4 bg-white ">
+                                    <a href="./images/graphics/logo/amin-international.png" class="image"  title="Amin International">                                     
+                                          <img src="./images/graphics/logo/amin-international.png" class="img-fluid" alt="">                                      
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-6 ">
+                                <div class="card card-style mb-4 bg-white ">
+                                    <a href="./images/graphics/logo/car.png" class="image"  title="JR Mobile car">                                     
+                                          <img src="./images/graphics/logo/car.png" class="img-fluid" alt="">                                      
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-6 ">
+                                <div class="card card-style mb-4 bg-white ">
+                                    <a href="./images/graphics/logo/ezzha.png" class="image"  title="Ezzha Soft">                                     
+                                          <img src="./images/graphics/logo/ezzha.png" class="img-fluid" alt="">                                      
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-6 ">
+                                <div class="card card-style mb-4 bg-white ">
+                                    <a href="./images/graphics/logo/homex.png" class="image"  title="Homex Construction">                                     
+                                          <img src="./images/graphics/logo/homex.png" class="img-fluid" alt="">                                      
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-6 ">
+                                <div class="card card-style mb-4 bg-white ">
+                                    <a href="./images/graphics/logo/osaka bento.png" class="image"  title="Amin International">                                     
+                                          <img src="./images/graphics/logo/osaka bento.png" class="img-fluid" alt="">                                      
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-2 col-md-2 col-sm-6 ">
+                                <div class="card card-style mb-4 bg-white ">
+                                    <a href="./images/graphics/logo/gc.png" class="image"  title="GC">                                     
+                                          <img src="./images/graphics/logo/gc.png" class="img-fluid" alt="">                                      
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonial -->
+
+    <section class="default testimonial-section wow fadeIn" id="testimonial">
+        <div class="container">
+            <div class="row  px-2">
+                <div class="col-lg-12 text-center">
+                    <small>My clients</small>
+                    <h2 class="secTtile">Happy Clients Says</h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="testimonial">
+                    <div class="p-3 ">
+
+                        <div class="blogBox">
+                            <!-- <img src="https://via.placeholder.com/600x400" width="160px" height="160px"
+                                class="rounded-circle"> -->
+                            <div class="content text-center text-light">
+                                <img src="./images/testimonial/john.webp" class="rounded-circle mx-auto mb-3"
+                                    width="90px">
+                                <p class="m-0">
+                                <h5>John Landish - <span class="iconify fs-3" data-icon="jam:fiverr-square"></span></h5>
+                                <span class="iconify" data-icon="gridicons:quote"></span>
+                                He is my main freelancer. He does research to learn the task. He is the best on fiverr!
+                                <span class="iconify" data-icon="ci:double-quotes-r"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 ">
+
+                        <div class="blogBox">
+                            <!-- <img src="https://via.placeholder.com/600x400" width="160px" height="160px"
+                                class="rounded-circle"> -->
+                            <div class="content text-center text-light">
+                                <img src="./images/testimonial/wanderlay.jpg" class="rounded-circle mx-auto mb-3"
+                                    width="90px">
+                                <p class="m-0">
+                                <h5>Wanderleyc - <span class=" iconify fs-3" data-icon="jam:fiverr-square"></span>
+                                </h5>
+                                <span class="iconify" data-icon="gridicons:quote"></span>
+                                He did exactly what i need and gave me a fully optimized and well done project.
+                                <span class="iconify" data-icon="ci:double-quotes-r"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3 ">
+
+                        <div class="blogBox">
+                            <!-- <img src="https://via.placeholder.com/600x400" width="160px" height="160px"
+                                class="rounded-circle"> -->
+                            <div class="content text-center text-light">
+                                <img src="./images/testimonial/gregoirecousin.webp" class="rounded-circle mx-auto mb-3"
+                                    width="90px">
+                                <p class="m-0">
+                                <h5>Gregoirecousin - <span class="iconify fs-3" data-icon="jam:fiverr-square"></span>
+                                </h5>
+                                <span class="iconify" data-icon="gridicons:quote"></span>
+                                He did everything i asked and was ready to review and re-do some parts of the project
+                                quickly.
+                                <span class="iconify" data-icon="ci:double-quotes-r"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact -->
+    <section class="default contact-section wow fadeIn " id="contact">
+        <div class="container">
+            <div class="row  px-2">
+                <div class="col-lg-12 text-center">
+                    <small>Just knock me, i'll be touch with you</small>
+                    <h2 class="secTtile">
+                        Get in touch
+                    </h2>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-9 mx-auto">
+                    <form action="mail.php" method="POST">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" placeholder="First Name *" class="form-control" name="fname"
+                                    required="required">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="text" placeholder="Last Name *" class="form-control" name="lname"
+                                    required="required">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="email" placeholder="E-mail *" class="form-control" name="email"
+                                    required="required">
+                            </div>
+                            <div class="col-md-6 form-group">
+                                <input type="number" min="1" placeholder="Phone *" class="form-control" name="phone"
+                                    required="required">
+                            </div>
+
+                            <div class="col-12 form-group">
+                                <textarea placeholder="Message*" class="textarea form-control" name="message"
+                                    id="form-message" rows="7" cols="10" required="required"></textarea>
+                            </div>
+                            <div class="col-12 form-group margin-b-none">
+                                <button type="submit" class="btn-theme mt-4">Submit Message</button>
+                                <button type="reset" class="btn-theme mt-4">Reset</button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <small>
+                        Design & Developed By
+                    </small>
+                    <small class="ps-2">
+                        <a class=" text-decoration-none" href="https://rb.gy/du7bpt"> <span class="text-white">Ashiqul
+                                Islam Emu</span></a>
+                    </small>
+                    <small class="ps-1">
+                        - 2023
+                    </small>
+
+                </div>
+                <div class="col-md-6"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/bootstrap-5.bundle.min.js"></script>
+    <script src="./js/iconify.min.js"></script>
+    <script src="./js/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="./js/slick.min.js" type="text/javascript"></script>
+    <script src="./js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+    <script src="./js/app.js"></script>
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+    <script>
+
+        $(document).ready(function () {
+
+            $('.testimonial').slick({
+                centerMode: true,
+                centerPadding: '0px',
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                draggable: true,
+                swipeToSlide: true,
+                arrows: false,
+                dots: true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            arrows: true,
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            arrows: false,
+                            dots: true,
+                            centerMode: true,
+                            centerPadding: '0px',
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            arrows: false,
+                            dots: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            arrows: false,
+                            dots: true,
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    },
+                ]
+            });
+
+
+        });
+        //    animation 
+        new WOW().init();
+
+    </script>
+    <script>
+
+        document.onkeydown = function (e) {
+            if (e.ctrlKey && e.keyCode === 85) {
+                alert("you cant get my code ever :)");
+                return false;
+            }
+        };
+
+         // popup script
+        jQuery(document).ready(function () {
+            jQuery('.popup-gallery').magnificPopup({
+                delegate: 'a',
+                type: 'image',
+                callbacks: {
+                    elementParse: function (item) {
+                        console.log(item.el.context.className);
+                        if (item.el.context.className == 'video') {
+                            item.type = 'iframe',
+                                item.iframe = {
+                                    patterns: {
+                                        youtube: {
+                                            index: 'youtube.com/',
+
+                                            id: 'v=',
+                                            src: '//www.youtube.com/embed/%id%?autoplay=1' // URL that will be set as a source for iframe. 
+                                        },
+                                        vimeo: {
+                                            index: 'vimeo.com/',
+                                            id: '/',
+                                            src: '//player.vimeo.com/video/%id%?autoplay=1'
+                                        },
+                                        gmaps: {
+                                            index: '//maps.google.',
+                                            src: '%id%&output=embed'
+                                        }
+                                    }
+                                }
+                        } else {
+                            item.type = 'image',
+                                item.tLoading = 'Loading image #%curr%...',
+                                item.mainClass = 'mfp-img-mobile',
+                                item.image = {
+                                    tError: '<a href="%url%">The image #%curr%</a> could not be loaded.'
+                                }
+                        }
+
+                    }
+                },
+                gallery: {
+                    enabled: true,
+                    navigateByImgClick: true,
+                    preload: [0, 1]
+                }
+
+            });
+
+        });
+    </script>
+</body>
+
+</html>
