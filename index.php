@@ -167,9 +167,7 @@
                         <span class="iconify" data-icon="ant-design:code-sandbox-circle-filled"></span>
                         <h4>Web Development</h4>
                         <p class="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam
+                        With a decade of experience in web development, I have witnessed the evolution of technologies, frameworks, and best practices that shape the modern web. From static HTML pages to dynamic, interactive web applications
                         </p>
                     </div>
                 </div>
@@ -178,9 +176,7 @@
                         <span class="iconify" data-icon="el:website-alt"></span>
                         <h4> Web Design</h4>
                         <p class="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam
+                        With 10 years of experience in web design, I have honed my skills in creating visually stunning, user-friendly, and highly functional websites.  I have worked with businesses, startups, to craft digital experiences 
                         </p>
                     </div>
                 </div>
@@ -189,9 +185,7 @@
                         <span class="iconify" data-icon="ant-design:sketch-circle-filled"></span>
                         <h4>Graphic design</h4>
                         <p class="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam
+                        I have developed a deep understanding of visual communication, branding, and design aesthetics. My work spans across various industries, helping businesses and individuals create compelling visuals that leave a lasting impression.
                         </p>
                     </div>
                 </div>
@@ -200,9 +194,7 @@
                         <span class="iconify" data-icon="el:video-alt"></span>
                         <h4>video editing</h4>
                         <p class="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam
+                        I have mastered the art of storytelling through visuals, sound, and motion with Adding dynamic elements using After Effects, Premiere Pro. From promotional videos to cinematic edits, I have worked on diverse projects that captivate audiences and deliver  messages. 
                         </p>
                     </div>
                 </div>
@@ -211,9 +203,7 @@
                         <span class="iconify" data-icon="ic:sharp-camera"></span>
                         <h4>photography</h4>
                         <p class="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam
+                        I have developed a keen eye for capturing moments that tell a story. From portraits to landscapes, events to commercial shoots, my journey in photography has been about more than just taking pictures—it's about creating visual art that evokes emotions  
                         </p>
                     </div>
                 </div>
@@ -222,9 +212,7 @@
                         <span class="iconify" data-icon="ant-design:code-sandbox-circle-filled"></span>
                         <h4>SEO</h4>
                         <p class="paragraph">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam inventore consectetur adipisicing elit. Ratione repudiandae sint id
-                            laboriosam
+                        I have helped businesses, brands, and websites improve their online visibility, increase organic traffic, and achieve higher rankings on search engines like Google. My expertise spans across technical SEO, content optimization, that ensure long-term success.
                         </p>
                     </div>
                 </div>
@@ -766,8 +754,8 @@
                                     id="form-message" rows="7" cols="10" required="required"></textarea>
                             </div>
                             <div class="col-12 form-group margin-b-none">
-                                <button type="submit" name="submit" class="btn-theme mt-4">Submit Message</button>
-                                <button type="reset" class="btn-theme mt-4">Reset</button>
+                                <button type="submit" name="submit" class="btn-theme mt-4 border-0">Submit Message</button>
+                                <button type="reset" class="btn-theme mt-4 border-0">Reset</button>
                             </div>
                         </div>
                     </form>
@@ -789,7 +777,7 @@
                                 Islam Emu</span></a>
                     </small>
                     <small class="ps-1">
-                        - 2023
+                        <?php echo date("Y"); ?>
                     </small>
 
                 </div>
