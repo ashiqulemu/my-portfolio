@@ -742,7 +742,7 @@
             </div>
             <div class="row mt-5">
                 <div class="col-lg-9 mx-auto">
-                    <form action="mail.php" method="POST">
+                    <form action="mailer.php" method="post">
                         <div class="row">
                             <div class="col-md-6 form-group">
                                 <input type="text" placeholder="First Name *" class="form-control" name="fname"
@@ -766,7 +766,7 @@
                                     id="form-message" rows="7" cols="10" required="required"></textarea>
                             </div>
                             <div class="col-12 form-group margin-b-none">
-                                <button type="submit" class="btn-theme mt-4">Submit Message</button>
+                                <button type="submit" name="submit" class="btn-theme mt-4">Submit Message</button>
                                 <button type="reset" class="btn-theme mt-4">Reset</button>
                             </div>
                         </div>

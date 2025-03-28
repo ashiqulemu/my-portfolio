@@ -5,5 +5,5 @@
  
  <div class="success-bg">
     <h1  class="text-center"> message sent successfully</h1> <br>
-        <a href="./index.html"  class="text-link fw-bold">Go to Home</a>
+        <a href="index.php"  class="text-link fw-bold">Go to Home</a>
  </div>
