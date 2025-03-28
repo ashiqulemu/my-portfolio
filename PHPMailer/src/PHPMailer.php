@@ -314,7 +314,7 @@ class PHPMailer
      *
      * @var bool
      */
-    public $SMTPAutoTLS = false;
+    public $SMTPAutoTLS = true;
 
     /**
      * Whether to use SMTP authentication.
