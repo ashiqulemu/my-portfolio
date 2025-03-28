@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
 
         // $mail->addAddress('ellen@example.com');               //Name is optional
         // $mail->addReplyTo('info@example.com', 'Information');
-        // $mail->addCC('cc@example.com');
+            $mail->addCC('info@ashiqulemu.com','Sender');
         // $mail->addBCC('bcc@example.com');
 
         //Attachments
