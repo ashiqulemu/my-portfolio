@@ -30,7 +30,7 @@ if (isset($_POST['submit'])) {
         //Recipients
 
         $mail->setFrom('sender@sendar.com', 'Sender'); // from user, 
-        $mail->addAddress('ashiqulemu.jpi@gmail.com', 'Emu');  // set which -> (email) will be sent the email 
+        $mail->addAddress('myemailgoeshere.com', 'Emu');  // set which -> (email) will be sent the email 
 
         // $mail->addAddress('ellen@example.com');               //Name is optional
         // $mail->addReplyTo('info@example.com', 'Information');
